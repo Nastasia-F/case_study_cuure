@@ -44,27 +44,19 @@ code {
     grid-template-columns: 2fr 4fr 3fr;
   }
 }
-.grid__item {
+.grid_item {
   height: 300px;
   width: 100%;
 }
 
-.heading-primary {
+.heading_primary {
   text-transform: uppercase;
   margin: 12px auto;
   font-size: 36px;
   text-align: center;
 }
 
-.heading-secondary {
-  color: #444;
-  font-size: 22px;
-  font-weight: 300;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-.section-cards {
+.section_cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -82,13 +74,13 @@ code {
   cursor: pointer;
 }
 
-.card__img {
+.card_img {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
 
-.card__caption {
+.cards {
   position: absolute;
   padding: 16px;
 } h2 {
@@ -116,13 +108,13 @@ code {
   transition: all 0.3s ease-in;
 }
 
-.modal--open {
+.modal_open {
   opacity: 1;
   visibility: visible;
   top: 0;
 }
 
-.modal__box {
+.modal_box {
   background-color: white;
   border-radius: 8px;
   max-width: 750px;
@@ -133,7 +125,7 @@ code {
   overflow: auto;
 }
 
-.modal__times {
+.modal_close {
   cursor: pointer;
   font-size: 32px;
   font-weight: 600;
@@ -142,7 +134,7 @@ code {
   right: 15px;
 }
 
-.modal__img {
+.modal_img {
   object-fit: cover;
   border-radius: 8px;
   width: 100%;
@@ -150,18 +142,18 @@ code {
   height: 300px;
 }
 
-.modal__txt {
+.modal_text {
   text-align: justify;
   vertical-align: top;
   color: #343a40;
   padding: 10px 24px;
 }
 
-.modal__txt p {
+.modal_txt p {
   line-height: 1.7;
 }
 
-.modal__heading {
+.modal_heading {
   margin-top: 12px;
   margin-bottom: 20px;
   font-size: 35px;

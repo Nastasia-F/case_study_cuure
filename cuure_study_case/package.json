@@ -17,8 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prettier:all": "prettier --write \"./**/*.{js,json,scss,md}\"",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -40,10 +39,5 @@
   },
   "devDependencies": {
     "prettier": "^2.3.1"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "tabWidth": 2
-  },
+  }
 }
