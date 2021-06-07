@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='container'>
-        <h1 className='heading_primary'>Cuure</h1>
+        <h1 className='heading_primary'>Meuble de jardin</h1>
         <ProductPage/>
       </div>
     );
@@ -78,10 +78,10 @@ const PaginationFooter = ({ currentPage, maxPageNumber, onChange }) => {
   return (
 
     <div className="flex-container">
-      <div>{ currentPage }</div>
+      <div class="cercle">{ currentPage }</div>
       <div className="paginate">
-        <div className="arrow" onClick={() => currentPage>1 ? onChange(currentPage-1) : undefined}> ← </div>
-        <div className="arrow circle" onClick={() => currentPage<maxPageNumber ? onChange(currentPage+1) : undefined}> → </div>
+        <div class="arrow" onClick={() => currentPage>1 ? onChange(currentPage-1) : undefined}> ← </div>
+        <div class="arrow" onClick={() => currentPage<maxPageNumber ? onChange(currentPage+1) : undefined}> → </div>
       </div>
     </div>
   )
@@ -118,54 +118,3 @@ class Modal extends React.Component {
 }
 
 export default App;
-
-// Paginate
-// -------------------------------------------------
-
-
-// function Paginate(){
-
-//   const [currentPage, setCurrentPage] = React.useState(4);
-//     let maxPages = 5;
-//     // empty array to hold page items
-//     let items = [];
-//     let leftSide = currentPage - 2;
-//     if(leftSide <= 0 ) leftSide=1;
-//     let rightSide = currentPage + 2;
-//     if(rightSide>maxPages) rightSide = maxPages;
-//     // loop
-//     for (let number = leftSide ; number <= rightSide; number++) {
-//       items.push(
-//         <div key={number} className={(number === currentPage ? 'paginate-effect active' : 'paginate-effect')} onClick={()=>{ setCurrentPage(number)}}>
-//           {number}
-//         </div>,
-//       );
-//   }
-
-//   const productPerPage = 3;
-
-//   function nextPage() {
-//     setCurrentPage((page) => page + 1);
-//   }
-
-//   function previousPage() {
-//     setCurrentPage((page) => page - 1);
-//   }
-
-//   function changePage(event) {
-//     const pageNumber = Number(event.target.productPerPage);
-//     setCurrentPage(pageNumber);
-//   }
-
-//   const paginationRender = () => {
-//     <div className="flex-container">
-//       {/*currentPage = cards*/}
-//       <div> currentPage : { currentPage }</div>
-//       <div className="paginate">
-//         <div className="paginate-effect" onClick={previousPage}></div>
-//         <div className="paginate-effect" onClick={nextPage}></div>
-//       </div>
-//     </div>
-//   }
-// }
-

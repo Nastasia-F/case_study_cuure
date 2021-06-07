@@ -12,51 +12,18 @@ code {
     monospace;
 }
 
-/*.article-tiles-cont {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 100px;
-  justify-content: flex-start;
-}
-
-.articles-page {
-  background: #f4f3f1;
-}*/
-
-.grid {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 15px;
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-gap: 15px;
-}
-@media screen and (min-width: 500px) {
-  .grid {
-    grid-template-columns: 2fr 4fr;
-  }
-}
-@media screen and (min-width: 900px) {
-  .grid {
-    grid-template-columns: 2fr 4fr 3fr;
-  }
-}
-.grid_item {
-  height: 300px;
-  width: 100%;
-}
-
 .heading_primary {
   text-transform: uppercase;
-  margin: 12px auto;
-  font-size: 36px;
+  margin: 30px auto;
+  font-size: 30px;
   text-align: center;
+  color: #289468;
 }
 
 .section_cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -65,14 +32,14 @@ code {
   box-shadow: #adb5bd 0px 10px 20px -10px;
   border-radius: 8px;
   overflow: hidden;
-  width: 400px;
+  width: 500px;
   height: 400px;
   position: relative;
   cursor: pointer;
 }
 
 .card_img {
-  height: 200px;
+  height: 225px;
   width: 100%;
   object-fit: cover;
 }
@@ -81,13 +48,14 @@ code {
   position: absolute;
   padding: 16px;
 } h2 {
-  font-size: 20px;
-  color: #444 ;
-  text-align: center;
+  margin: 5px;
+  font-size: 22px;
+  color: #289468;
 } p {
   font-size: 14px;
-  color:#444;
+  color: #444;
   text-align: justify;
+  margin: 10px;
 }
 
 .modal {
@@ -135,14 +103,14 @@ code {
   object-fit: cover;
   border-radius: 8px;
   width: 100%;
-  min-height: 300px;
+  min-height: 30px;
   height: 300px;
 }
 
 .modal_text {
   text-align: justify;
   vertical-align: top;
-  color: #343a40;
+  color: #444;
   padding: 10px 24px;
 }
 
@@ -174,7 +142,7 @@ code {
   }
 }
 
-/*--------------------------------------------------------*/
+/*--Pagination-------------------------------------------------*/
 
 .flex-container {
   display: flex;
@@ -184,46 +152,31 @@ code {
 }
 
 .flex-container > div {
+  text-align: center;
   padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
+
 .paginate {
   display: flex;
 }
 
 .arrow{
-  color: black;
+  color: #444;
   cursor: pointer;
   padding: 0px 30px;
   font-size: 27px;
 }
 
 .arrow:hover {
-  color: #1BCB7F;
+  color: #b2eabd;
 }
 
-.circle {
-  background-color: #c8e6ce;
-  border-radius: 50%;
-  height: 40px;
+.cercle {
   width: 40px;
+  height: 33px;
+  border-radius: 20px;
+  background: #b2eabd;
 }
-
-.paginate-effect:hover {
-  text-decoration: none;
-  color: blue;
-}
-.paginate-effect:hover a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.active {
-  color: blue;
-}
-a:link {
-  text-decoration: none;
-  color: #dd4124;
-}
-
-
 
